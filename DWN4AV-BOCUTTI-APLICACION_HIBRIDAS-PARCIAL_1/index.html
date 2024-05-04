@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sueño del Futbolero :: Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+</head>
+<body>
+
+<!-- NAV -->
+
+<div class="container nav-futbol border border-top-0 border-end-0 border-start-0 border-2 border-black text-start">
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href = "index.html">
+        <img  class="d-none d-md-block d-lg-none img-fluid px-2" src="img/logos/logo.png" alt="Pelota del Logo de El Sueño del Futbolero">
+        <img  class="d-none d-lg-block img-fluid px-2" src="img/logos/logohorizontal.png" alt="Logo El Sueño del Futbolero Horizontal" >
+        <h1 class="d-md-none px-3 fs-4 ">El Sueño del Futbolero </h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" href="#productos">Camisetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" href="#clubes">Clubes</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" href="#usuarios">Usuarios</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+    </div>
+
+
+<!-- MAIN -->
+<div class="container bg-futbol">
+    <main>
+    
+        <div id="carouselNovedades" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banners/bannerbocadefinitivo.jpg" class="d-block w-100" alt="Banner promocionando nueva camiseta de Boca Juniors">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banners/bannerargentina.jpg" class="d-block w-100" alt="Banner promocionando nueva camiseta de Argentina">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banners/bannerrealmadrid2.jpg" class="d-block w-100" alt="Banner promocionando nueva camiseta de Real Madrid">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovedades" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNovedades" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+          <section id="informacion">
+            <div class="container-sm container-md bg-futbol">
+              <h2 class="p-3 fs-1">Información sobre la API</h2>
+              <div class="row">
+                <div class="col-12 p-3  ">
+              <p class="fs-3 fw-semibold">  El sueño del futbolero es un API que te permitirá conocer información sobre cualquier camiseta de futbol de cualquier club. Cada producto tendrá información tanto de la camiseta como del club de la misma. Cada elemento tendrá sus propios endpoints a través del cual te permitirá acceder a la información de cada elemento </p>
+              </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section id="productos">
+            <div class="container-sm container-md bg-futbol">
+              <h3 class="p-3 fs-2">Camisetas</h3>
+              <div class="row">
+                <div class="col-12 p-3 d-flex justify-content-center align-items-center ">
+                    <ul class="p-2 fs-5">
+                        <li><span class=" fw-bold"> getProductosDisponibles()</span> Permite visualizar lista completa de camisetas disponibles.</li>
+                        <li><span class=" fw-bold"> getProductosNoDisponibles()</span> Permite visualizar lista completa de camisetas no disponibles.</li>
+                        <li><span class=" fw-bold"> getProductosMayorPrecio()</span> Permite ordenar las camisetas segun su precio de mayor a menor</li>
+                        <li><span class=" fw-bold"> getProductosMenorrPrecio()</span> Permite ordenar las camisetas segun su precio de menor a mayor</li>
+                        <li><span class=" fw-bold"> searchId()</span> Permite buscar por id en el listado de camisetas.</li>
+                        <li><span class=" fw-bold"> searchPais()</span> Permite buscar por país en el listado de camisetas.</li>
+                        <li><span class=" fw-bold"> searchMarca()</span> Permite buscar por marca en el listado de camisetas.</li>
+                        <li><span class=" fw-bold"> createProducto()</span> Permite crear una nueva camiseta.</li>
+                        <li><span class=" fw-bold"> updateProducto()</span> Permite actualizar los datos de una camiseta ya existente.</li>
+                        <li><span class=" fw-bold"> desactivateProducto()</span> Permite quitar del listado de camisetas disponibles pero no las elimina. Este endpoint se piensa desde el lado de que el prodcuto pueda volver a ingresar.</li>
+    
+                    </ul>
+              </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section id="clubes">
+            <div class="container-sm container-md bg-futbol">
+              <h3 class="p-3 fs-2">Clubes</h3>
+              <div class="row">
+                <div class="col-12 p-3  ">
+                    <ul class="p-2 fs-5">
+                        <li><span class=" fw-bold"> getClub()</span> Permite visualizar lista completa de clubes.</li>
+                        <li><span class=" fw-bold"> createClub()</span> Permite crear un nuevo club.</li>
+                        <li><span class=" fw-bold"> updateClub()</span> Permite actualizar los datos de un club ya existente.</li>
+                    </ul>
+              </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section id="usuarios">
+            <div class="container-sm container-md bg-futbol">
+              <h3 class="p-3 fs-2">Usuarios</h3>
+              <div class="row">
+                <div class="col-12 p-3  ">
+                    <ul class="p-2 fs-5">
+                        <li><span class=" fw-bold"> getUsuario()</span> Permite visualizar lista completa de usuarios.</li>
+                        <li><span class=" fw-bold"> createUsuario()</span> Permite crear un nuevo usuario.</li>
+                        <li><span class=" fw-bold"> updateClub()</span> Permite actualizar los datos de un usuario ya existente.</li>
+                    </ul>
+              </div>
+
+              </div>
+            </div>
+          </section>
+
+    </main>
+    </div>
+<!-- FOOTER -->
+<div class="container footer-futbol border border-bottom-0 border-end-0 border-start-0 border-2 border-black">
+    <footer class="text-light text-center fw-bold">
+     Bocutti Santiago - Aplicaciones Híbridas - Marcos Galban, Camila Belen - DWN4AV - 1er Parcial 2024 
+    </footer>
+</div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"> </script>
+</body>
+</html>

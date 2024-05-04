@@ -1,0 +1,55 @@
+
+body{
+    background-color: #008000;
+    text-shadow: black;
+}
+
+@font-face {
+    font-family: Fuente1;
+    src: url(../fuentes/Acme-Regular.ttf);
+}
+
+
+header, nav, main, footer {
+    max-width: 1296px;
+    margin: auto;
+}
+
+.bg-futbol {
+    background-color: whitesmoke;
+}
+
+.nav-futbol {
+    background-color: #c0cd29;
+}
+
+.bg-boton {
+    background-color: #c0cd29;
+}
+
+.footer-futbol {
+    background-color: grey;
+}
+
+h1, h2, h3, .nav-link {
+    font-family: Fuente1;
+}
+
+.imagenClub{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-admin{
+    background-color: grey;
+}
+
+.container-camiseta{
+    height: 600px;
+}
+
+li {
+    list-style: none;
+}
+
+
